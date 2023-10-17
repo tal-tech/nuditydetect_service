@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenwen/Desktop/cpp/correct_det/src/base/third_party/superfasthash/superfasthash.c
+stdint.h
+-
+stdlib.h
+-
+

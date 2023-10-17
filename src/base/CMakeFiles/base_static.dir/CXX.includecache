@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenwen/Desktop/cpp/correct_det/src/base/base_switches.cc
+base/base_switches.h
+/home/chenwen/Desktop/cpp/correct_det/src/base/base/base_switches.h
+build/build_config.h
+/home/chenwen/Desktop/cpp/correct_det/src/base/build/build_config.h
+
+base/base_switches.h
+build/build_config.h
+base/build/build_config.h
+
+build/build_config.h
+TargetConditionals.h
+-
+unistd.h
+-
+

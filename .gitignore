@@ -1,0 +1,10 @@
+src/ai_model/model/cls_image_nudity_v1.0.0.onnx
+src/ai_model/lib/libnvinfer.so
+src/ai_model/lib/libcudnn_cnn_infer.so.8
+src/ai_model/lib/libcublas.so.10
+src/ai_model/lib/libcudnn_ops_infer.so.8
+src/ai_model/lib/libnvinfer.so.7.2.2
+src/ai_model/lib/libnvinfer.so.7
+src/ai_model/lib/libcublas.so.10.0
+src/3rdParty/ubuntu-cuda10/libnvinfer.so.6
+src/3rdParty/ubuntu-cuda10/libcublas.so.10.0

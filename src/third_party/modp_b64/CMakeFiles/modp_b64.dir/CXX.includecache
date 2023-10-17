@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/modp_b64.cc
+modp_b64.h
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/modp_b64.h
+modp_b64_data.h
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/modp_b64_data.h
+
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/modp_b64.h
+stddef.h
+-
+string
+-
+
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/modp_b64_data.h
+build/build_config.h
+/home/chenwen/Desktop/cpp/correct_det/src/third_party/modp_b64/build/build_config.h
+stdint.h
+-
+
+build/build_config.h
+TargetConditionals.h
+-
+unistd.h
+-
+

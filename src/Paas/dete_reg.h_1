@@ -1,0 +1,43 @@
+﻿#pragma once   //保证头文件只被编译一次
+#ifndef _DETE_REG_H
+#define _DETE_REG_H
+
+//#include <fstream>
+//#include <iostream>
+
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+//#include <time.h>
+//#include <vector>
+
+#include <unistd.h>
+//#include <curl/curl.h>
+
+#include "base64.h"
+
+#include"types.h"
+
+using namespace std;
+
+
+class dete_reg{
+
+public:
+	void set(curlData &curldata);
+	void process();
+
+	void downloadImg(cv::Mat &img, std::string &url);
+	std::string deteImg(std::string &imgBase64, std::string &imgname, std::string &url);
+	static void reg(const string &imgUrl, const string &token, const int &openMode, string & jsonStr);
+	static void reg(const cv::Mat &img, const string &token, const int &openMode, string & jsonStr);
+
+	
+
+private:
+
+	curlData m_data;
+
+};
+
+#endif

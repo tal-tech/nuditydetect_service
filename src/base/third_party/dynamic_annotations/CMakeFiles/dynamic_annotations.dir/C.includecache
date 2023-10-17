@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenwen/Desktop/cpp/correct_det/src/base/third_party/dynamic_annotations/dynamic_annotations.c
+windows.h
+-
+stdlib.h
+-
+string.h
+-
+base/third_party/dynamic_annotations/dynamic_annotations.h
+/home/chenwen/Desktop/cpp/correct_det/src/base/third_party/dynamic_annotations/base/third_party/dynamic_annotations/dynamic_annotations.h
+base/third_party/valgrind/valgrind.h
+/home/chenwen/Desktop/cpp/correct_det/src/base/third_party/dynamic_annotations/base/third_party/valgrind/valgrind.h
+
+base/third_party/dynamic_annotations/dynamic_annotations.h
+
+base/third_party/valgrind/valgrind.h
+stdarg.h
+-
+

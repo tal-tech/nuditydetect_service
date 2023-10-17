@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenwen/Desktop/cpp/correct_det/src/breakpad/src/common/convert_UTF.c
+convert_UTF.h
+/home/chenwen/Desktop/cpp/correct_det/src/breakpad/src/common/convert_UTF.h
+stdio.h
+-
+
+/home/chenwen/Desktop/cpp/correct_det/src/breakpad/src/common/convert_UTF.h
+

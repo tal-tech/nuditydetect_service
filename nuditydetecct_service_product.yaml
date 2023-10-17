@@ -1,0 +1,76 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: godhand-nuditydetect-v4
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: godhand-nuditydetect-v4
+  template:
+    metadata:
+      labels:
+        run: godhand-nuditydetect-v4
+    spec:
+      affinity:
+        #节点亲和性
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: node/type
+                operator: In
+                values:
+                - AIGPU
+      tolerations:
+      - effect: NoExecute
+        key: AI_GPU
+        operator: Equal
+        value: paas
+      containers:
+      - name: godhand-nuditydetect-v4-containers
+        image: registry-vpc.cn-beijing.aliyuncs.com/ailab-paas/nuditydetect_service:3.3.0-20191015114003
+        volumeMounts:
+        - name: host-time
+          mountPath: /etc/localtime
+        ports:
+        - containerPort: 5012
+        env:
+        - name: CURRENT_ENV
+          value: PROD
+        resources:
+          requests:
+            cpu:  1000m
+            memory: 1000Mi
+            aliyun.com/gpu-mem: "2"
+          limits:
+            cpu:  4000m
+            memory: 6000Mi
+            aliyun.com/gpu-mem: "2"
+      imagePullSecrets:
+            - name: godhand-regcred
+      #nodeName: cn-beijing.i-2zea6sz3emarw899rae1
+      volumes:
+      - name: host-time
+        hostPath:
+          path: /etc/localtime
+      nodeSelector:
+        beta.kubernetes.io/os: linux
+        kubernetes.io/hostname: 10.19.250.6
+        #node/gputype: P40
+        #node/type: GPU
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: godhand-nuditydetect-v4
+  namespace: prod
+  labels:
+    run: godhand-nuditydetect-v4
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5012
+  selector:
+    run: godhand-nuditydetect-v4

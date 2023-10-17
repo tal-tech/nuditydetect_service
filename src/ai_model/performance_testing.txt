@@ -1,0 +1,15 @@
+img_crawl_out1_baidu_部队_000009.jpg,0,31.175,1,0.734035
+img_crawl_out1_baidu_部队_000028.jpg,0,25.561,0,0.514604
+img_crawl_out1_baidu_部队_000013.jpg,0,23.493,0,0.551419
+img_crawl_out1_baidu_部队_000015.jpg,0,23.538,1,0.684717
+img_crawl_out1_baidu_部队_000035.jpg,0,25.517,1,0.869909
+img_crawl_out1_baidu_部队_000001.jpg,0,23.648,0,0.61569
+img_crawl_out1_baidu_部队_000024.jpg,0,25.482,0,0.896211
+img_crawl_out1_baidu_部队_000011.jpg,0,23.988,0,0.938824
+img_crawl_out1_baidu_部队_000007.jpg,0,23.148,0,0.621076
+img_crawl_out1_baidu_部队_000006.jpg,0,24.285,0,0.509676
+avg_cost_time:24.9835
+acc:0.7
+recall:-nan
+precision:0
+F1:-nan
